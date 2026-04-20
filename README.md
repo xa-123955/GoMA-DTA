@@ -78,9 +78,6 @@ Run the following command to start the training process:
 filetree 
 ├── configs
 ├── datasets
-├── MolFormer
-├── ESM2
-├── BlueBERT
 ├── configs.py
 ├── dataloder.py
 ├── datapre.py
