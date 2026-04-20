@@ -34,8 +34,8 @@ class GoMADTA(nn.Module):
         self.Mamba3 = Mamba2(d_model=mamba_dim)
         self.Mamba4 = Mamba2(d_model=mamba_dim)
 
-        self.chem_tokenizer = AutoTokenizer.from_pretrained("/home/xiong123/L_tt/MoLFormer-XL-both-10pct", trust_remote_code=True)
-        self.chem_model = AutoModel.from_pretrained("/home/xiong123/L_tt/MoLFormer-XL-both-10pct", deterministic_eval=True, trust_remote_code=True).to(device)
+        self.chem_tokenizer = AutoTokenizer.from_pretrained("./MoLFormer-XL-both-10pct", trust_remote_code=True)
+        self.chem_model = AutoModel.from_pretrained("./MoLFormer-XL-both-10pct", deterministic_eval=True, trust_remote_code=True).to(device)
         
         self.conv_layers = nn.ModuleList()
         self.bn_layers = nn.ModuleList()
